@@ -44,10 +44,7 @@ const updateDOM = (moveOne, moveTwo, outcome) => {
   var text = document.createTextNode(outcome);
   para.appendChild(text);
   const header = document.getElementsByClassName("resultsHeader")[0];
-  console.log(header);
-  if(header != undefined){
-    header.remove();
-  }
+  if(header != undefined) header.remove();
   document.getElementsByClassName("winDiv")[0].append(para);
 };
 
